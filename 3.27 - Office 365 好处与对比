@@ -10,7 +10,7 @@ Integration with Outlook (a rich, familiar email experience with offline access)
 
 Exchange Online Protection 
 eliminate threats 
-protect your company's IP reputation (by using separate outbound delivery pools for high-risk email)
+**protect your company's IP reputation** (by using separate outbound delivery pools for high-risk email)
 five financially backed SLAs (protection from 100% of known viruses and 99% of spam)
 globally load-balanced network of datacenters (99.999% network uptime)
 Ensure that no email is lost or bounced (by automatically queuing email if the destination email server becomes unavailable for any reason)

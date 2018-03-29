@@ -36,7 +36,8 @@ Windows XP、Windows Vista、Windows 7、Windows 8仅仅是“准多用户”的
 **一、单用户远程**
 开启远程登录，添加需要允许远程登录的用户
 计算机->属性->远程
-![alt text](https://github.com/bakerX/Diary/blob/master/images/srdp.jpg "remote desktop")
+![alt text][logo]
+[logo]: https://github.com/bakerX/Diary/blob/master/images/srdp.jpg "remote desktop"
 
 
 

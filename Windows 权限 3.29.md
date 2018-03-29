@@ -48,7 +48,35 @@ Windows XP、Windows Vista、Windows 7、Windows 8仅仅是“准多用户”的
 问题2：默认远程桌面连接数是2个用户，如果多余两个用户进行远程桌面连接时，系统就会提示超过连接数。
 ![Alt text](https://github.com/bakerX/Diary/blob/master/images/2rdp.jpg "mutiple users login")
 
+__如何解决这两个问题？这就需要我们安装配置远程桌面授权服务__
+1. 远程桌面授权：
+添加Windows域用户或创建单独用户User1、User2和User3并将其加入到远程桌面组
+打开“服务器管理器” -> “角色” -> “添加角色” -> “远程桌面服务”
+![alt text](https://github.com/bakerX/Diary/blob/master/images/ws-roles.jpg)
+“角色服务”中我们只需要选择“远程桌面会话主机”和“远程桌面授权”
+![alt text](https://github.com/bakerX/Diary/blob/master/images/rdp.jpg)
+![alt text](https://github.com/bakerX/Diary/blob/master/images/rdp-p.jpg)
+“身份验证方法”建议选择第二个，“不需要使用网络级别身份验证”，因为如果选择第一项的话，是XP系统连接Server 2008,那么系统就会提示你无法连接。
+![alt text](https://github.com/bakerX/Diary/blob/master/images/rdp-i.jpg)
+添加可以连接到此RD会话主机服务器的用户或用户组(Administrator默认是添加的，将新建的三个用户加入进去)
+![alt text](https://github.com/bakerX/Diary/blob/master/images/rdp-user.jpg)
+注意：安装完成之后需要重启服务器进行完全安装。
 
+__2. 远程桌面会话主机配置__
+安装完毕后，点击“开始” - “所有程序” - “管理工具” - “远程桌面服务” - “远程桌面会话主机配置” 
+![alt text](https://github.com/bakerX/Diary/blob/master/images/rdp-host.jpg)
+找打RDP-TCP - 右键属性 - 网络适配器 - 勾选无限制的连接器
+![alt text](https://github.com/bakerX/Diary/blob/master/images/rdp-limit.jpg)
+在常规中选择“限制每个用户只能进行一个会话” - 邮件常规 - 去掉勾选。
+![alt text](https://github.com/bakerX/Diary/blob/master/images/rdp-limit2.jpg)
+授权中选择每用户，添加指定许可证服务器
+![alt text](https://github.com/bakerX/Diary/blob/master/images/rdp-limit3.jpg)
 
+__3. 远程桌面授权服务激活__
 
-
+点击“开始” - “所有程序” - “管理工具” - “远程桌面服务” - “远程桌面授权管理器”
+![alt text](https://github.com/bakerX/Diary/blob/master/images/rdp-cal.jpg)
+可以看到目前该授权服务器是未被激活的，右键“激活服务器” 
+![alt text](https://github.com/bakerX/Diary/blob/master/images/rdp-cal-a.jpg)
+完成激活后就可以看到许可证信息
+![alt text](https://github.com/bakerX/Diary/blob/master/images/rdp-cal-a2.jpg)

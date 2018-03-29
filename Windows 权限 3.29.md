@@ -1,6 +1,6 @@
 ### 前言 
-前天学习了一下GitHub的 「markdown」（[markdown]:https://guides.github.com/features/mastering-markdown is a way to style text on the web.）的标记，才懂了之前读到的那些富文本的显示是怎么完成的，在markdown之前我还一直以为在GitHub的页面里面可以选择诸如Rich text
-或者HTML的选项，直接将文本变成“所写即所得”的带style的格式。很早之前读李笑来的 Reborn系列 （地址请戳这里 https://github.com/xiaolai/reborn/blob/master/A04.md）
+前天学习了一下GitHub的 「markdown」（[markdown]:(https://guides.github.com/features/mastering-markdown) is a way to style text on the web.）的标记，才懂了之前读到的那些富文本的显示是怎么完成的，在markdown之前我还一直以为在GitHub的页面里面可以选择诸如Rich text
+或者HTML的选项，直接将文本变成“所写即所得”的带style的格式。很早之前读李笑来的 Reborn系列 （地址请戳这里 https://github.com/xiaolai/reborn）
 喜欢这种显示的格式，但是却不知道是怎么做出来的。现在懂了之后，就开始异常地喜欢用markdown配合文字来写。
 
 今天继续深入了解Windows操作系统的知识，说来也是惭愧，使用了windows有十年了，作为IT从业人员也已经把windows作为自己的职业工具也有8年了，却也是从未有深刻的理解windows作为底层操作系统的运作方式和原理，仅仅也不过是一个因为用的多而有一些高级的“用户”而已。

@@ -40,6 +40,14 @@ Windows XP、Windows Vista、Windows 7、Windows 8仅仅是“准多用户”的
 
 [logo]: https://github.com/bakerX/Diary/blob/master/images/srdp.jpg "remote desktop"
 
+运行 -> mstsc进行远程连接
+
+**二、多用户登录**
+在我们使用远程连接时，会遇到两个问题：
+问题1：远程桌面连接时，同一个用户不能同时开启两个桌面连接
+问题2：默认远程桌面连接数是2个用户，如果多余两个用户进行远程桌面连接时，系统就会提示超过连接数。
+![Alt text](https://github.com/bakerX/Diary/blob/master/images/2rdp.jpg "mutiple users login")
+
 
 
 

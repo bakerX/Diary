@@ -38,7 +38,7 @@ Windows XP、Windows Vista、Windows 7、Windows 8仅仅是“准多用户”的
 计算机->属性->远程
 ![alt text][logo]
 
-[logo]:https://github.com/bakerX/Diary/blob/master/images/srdp.jpg "remote desktop"
+[logo]: https://github.com/bakerX/Diary/blob/master/images/srdp.jpg "remote desktop"
 
 
 

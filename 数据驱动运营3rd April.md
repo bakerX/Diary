@@ -10,13 +10,13 @@
 
 光有数据仪表盘是不够的（老板当然还是高兴的），对于市场和运营的同学来说就差的很远。那这个时候我们需要自助式数据分析（Self-service Data Analytics）,让参与业务的人真正掌握数据，去进行数据分析。
 
-![alt text](https://github.com/bakerX/Diary/tree/master/images/self-service-data.jpg)
+![alt text](https://github.com/bakerX/Diary/blob/master/images/self-service-data.jpg)
 
 这里对应的就是一个很强烈的对比，我们源头是一堆杂乱的数据，中间有一个工程师用来跑这个数据，然后右边是接各种业务部门的需求，然后排队等待被处理，这种方式是非常低效和无序的。而理想的好的状态是，我们先将大数据源本身整好，整全整细，中间提供强大的分析工具，让每一个业务员都能直接进行操作，大家并发的去做一些业务上的数据需求，这样效率就高了。
 
 **下面来讲数据处理的流程：**
 
-![alt text](https://github.com/bakerX/Diary/tree/master/images/Bigdata-pyramid.jpg)
+![alt text](https://github.com/bakerX/Diary/blob/master/images/Bigdata-pyramid.jpg)
 
 __1. 数据采集__
 基本原则
@@ -30,7 +30,7 @@ __2. 数据建模__
 有了数据之后，就要对数据进行加工，不能把原始的数据直接暴露给上面的业务分析人员，它可能本身是杂乱的，没有经过很好的逻辑抽象。
 这里就会涉及到数据建模。首先，提一个概念就是数据模型。许多人对数据模型这个词产生一种畏惧感，觉得模型这个东西很高深，很复杂，但其实这个事情非常简单。
 
-![alt text](https://github.com/bakerX/Diary/tree/master/images/bigdata-model.jpg)
+![alt text](https://github.com/bakerX/Diary/blob/master/images/bigdata-model.jpg)
 
 这是神测数据的CEO桑文锋讲述的他自己在家里干过的一件事情：我自己家里的家谱在文革的时候被烧掉了，后来家里的长辈说一定要把家谱这些东西给存档一下，因为我会电脑，就帮着用电脑去处理了一下这些家族的数据这些关系，整理出了族谱。
 
@@ -38,7 +38,7 @@ __2. 数据建模__
 
 数据模型是对现实世界的一个抽象化的数据表示。创业公司经常是这么一个情况，当面对业务时候，一般前端做一个请求，然后对请求经过处理，再更新到数据库里面去，数据库里面建了一系列的数据表，数据表之间都是很多的依赖关系。
 
-![alt text](https://github.com/bakerX/Diary/tree/master/images/bigdata-relation.jpg)
+![alt text](https://github.com/bakerX/Diary/blob/master/images/bigdata-relation.jpg)
 
 
 
@@ -46,15 +46,15 @@ __2. 数据建模__
 一个典型的数据平台可以分为数据接入、数据传输、数据存储和建模、数据统计分析与挖掘、数据的可视化和最终反馈。
 一个典型的互联网用户产品通常会接入三类数据：
 
-![alt text](https://github.com/bakerX/Diary/tree/master/images/Bigdata1.jpg)
+![alt text](https://github.com/bakerX/Diary/blob/master/images/Bigdata1.jpg)
 
 其中接入最多和使用最广泛的一类是前端操作数据。还有更广泛的数据就是后端日志。还有一类就是业务数据，也可能是第三方服务，如客服、配送等通过数据接口传递来的一些信息。目前对于业务数据的分析，是缺乏现成工具的，一般都是需要临时性的写SQL来分析，这件事情非常繁杂、细碎和痛苦。数据接入是一件苦事。一方面，数据的适用方和接入方通常会是两个团队，数据的使用方是产品或者运营等非技术同学，数据的接入方则是技术人员，所以每次要做数据接入，都会有冗长而琐碎的沟通；二，技术数据使用方搞定了技术帮你添加新的埋点，这也会是一个很漫长的过程，要先开发，然后发版，然后等待用户更新，整个流程很长，迭代代价很痛苦。并且其中会由很多难以把握的过程，例如，一个简单的代码错误，一个简单的调用错误，都无法保证数据的完整性和正确性；三，我们的企业，我们的业务会持续发展，运营和推广活动也会越来越频繁，我们会发现，在前端埋的点会越来越多，这些埋点会多到让人无法管理，让人抓狂的程度。
 
 下面是神测数据的全端数据接入：
 
-![alt text](https://github.com/bakerX/Diary/tree/master/images/Bigdata2.jpg)
+![alt text](https://github.com/bakerX/Diary/blob/master/images/Bigdata2.jpg)
 
 完成了数据的接入，获取了全端数据，就可以迅速地用前端可视化来看下效果。那么数据分析能做什么？
 典型的数据分析需求有下面这些，比如运营监控＼产品改进和商业决策等等，这些都是基础需求（10%的数据问题）。
 
-![alt text](https://github.com/bakerX/Diary/tree/master/images/Bigdata3.jpg)
+![alt text](https://github.com/bakerX/Diary/blob/master/images/Bigdata3.jpg)

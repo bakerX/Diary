@@ -19,8 +19,8 @@
 
 做到80分的PPT的第一步，先做到60分的PPT
 
+![alt text](https://github.com/bakerX/Diary/blob/master/images/60.jpg)
 
-![alt text] (https://github.com/bakerX/Diary/blob/master/images/60.jpg)
 
 1. 对齐
    对齐可以说说是PPT排版最最最最重要的一步，也是最容易做到的一点。
@@ -29,7 +29,7 @@
 2. 对比
    对齐的作用就是形成视觉上联系，而对比则是在这视觉联系上做一个突出，能让别人瞬间找到重点。
    
-   ![alt text] (https://github.com/bakerX/Diary/blob/master/images/compare.jpg)
+   ![alt text](https://github.com/bakerX/Diary/blob/master/images/compare.jpg)
    
    相信大家看到的两排形状，瞬间发现不同的可能是第一排的绿色矩形，或者时第二排的巨大的矩形。 
    

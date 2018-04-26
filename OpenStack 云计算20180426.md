@@ -1,6 +1,6 @@
-## 企业IaaS私有云，商业软件有 VMWare vSphere, 开源软件 OpenStack、CloudStack。OpenStack是由NASA和著名的服务器托管商Rackspace发起的一个开源项目，2010年推出第一个版本。相对于其它开源云平台，OpenStack的license最友好，项目活跃度最高，参与开发人员最多。OpenStack被喻为云时代的Linux。
+### 企业IaaS私有云，商业软件有 VMWare vSphere, 开源软件 OpenStack、CloudStack。OpenStack是由NASA和著名的服务器托管商Rackspace发起的一个开源项目，2010年推出第一个版本。相对于其它开源云平台，OpenStack的license最友好，项目活跃度最高，参与开发人员最多。OpenStack被喻为云时代的Linux。
 
-## 几乎所有的大型IT公司，比如IBM、HP、Oracle都已经推出了自己的基于OpenStack的解决方案。也有很多著名的公有云服务是运行在OPenStack之上，比如国外的Rackspace和HP的Public Cloud。国内的OpenStack用户也逐步在增长，先有瞬联软件、趣游、网易等分别尝试基于OpenStack开发部署自己的云平台，之后爱奇艺、用友、京东、百度、360、美团等也纷纷选用OpenStack。
+### 几乎所有的大型IT公司，比如IBM、HP、Oracle都已经推出了自己的基于OpenStack的解决方案。也有很多著名的公有云服务是运行在OPenStack之上，比如国外的Rackspace和HP的Public Cloud。国内的OpenStack用户也逐步在增长，先有瞬联软件、趣游、网易等分别尝试基于OpenStack开发部署自己的云平台，之后爱奇艺、用友、京东、百度、360、美团等也纷纷选用OpenStack。
 
 ## OpenStack的主要功能
 

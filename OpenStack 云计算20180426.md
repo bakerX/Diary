@@ -1,4 +1,4 @@
-# 企业IaaS私有云，商业软件有 VMWare vSphere, 开源软件 OpenStack、CloudStack。OpenStack是由NASA和著名的服务器托管商Rackspace发起的一个开源项目，2010年推出第一个版本。相对于其它开源云平台，OpenStack的license最友好，项目活跃度最高，参与开发人员最多。OpenStack被喻为云时代的Linux。
+## 企业IaaS私有云，商业软件有 VMWare vSphere, 开源软件 OpenStack、CloudStack。OpenStack是由NASA和著名的服务器托管商Rackspace发起的一个开源项目，2010年推出第一个版本。相对于其它开源云平台，OpenStack的license最友好，项目活跃度最高，参与开发人员最多。OpenStack被喻为云时代的Linux。
 
 ## 几乎所有的大型IT公司，比如IBM、HP、Oracle都已经推出了自己的基于OpenStack的解决方案。也有很多著名的公有云服务是运行在OPenStack之上，比如国外的Rackspace和HP的Public Cloud。国内的OpenStack用户也逐步在增长，先有瞬联软件、趣游、网易等分别尝试基于OpenStack开发部署自己的云平台，之后爱奇艺、用友、京东、百度、360、美团等也纷纷选用OpenStack。
 
@@ -64,31 +64,31 @@ OpenStack是由很多不同的组件构成的，他们实现高可用的方式�
 
 ！[alt text](https://github.com/bakerX/Diary/blob/master/images/openstack-HA.jpg)
 
-..* OpenStack API服务，例如nova-api，glance-api，nova-api用HAProxy和pacemaker实现
-..* OpenStack的web管理界面Horizon，也使用HAProxy和pacemaker实现
-..* 消息队列服务RabbitMQ 使用自己的高可用功能，实现active/active高可用
-..* MySQL数据库服务器的高可用通过Galera实现，提供active/active高可用
-..* 多台Compute node本身就具有高可用特性，不需要特别实现。
+* OpenStack API服务，例如nova-api，glance-api，nova-api用HAProxy和pacemaker实现
+* OpenStack的web管理界面Horizon，也使用HAProxy和pacemaker实现
+* 消息队列服务RabbitMQ 使用自己的高可用功能，实现active/active高可用
+* MySQL数据库服务器的高可用通过Galera实现，提供active/active高可用
+* 多台Compute node本身就具有高可用特性，不需要特别实现。
 
 控制节点实现高可用需要至少3台物理服务器。
 
 ## 一个典型的OpenStack HA硬件配置方案
 
-..* 一个千兆以太网交换机接管理网络，一个万兆以太网交换机接数据网络
-..* 一个服务器作为Fuel master server
-..* 三台服务器作为OpenStack控制节点
-..* 10 ~ 20 台服务器作为OpenStack的计算节点
-..* 5台服务器作为OpenStack的存储节点
+* 一个千兆以太网交换机接管理网络，一个万兆以太网交换机接数据网络
+* 一个服务器作为Fuel master server
+* 三台服务器作为OpenStack控制节点
+* 10 ~ 20 台服务器作为OpenStack的计算节点
+* 5台服务器作为OpenStack的存储节点
 
 具体服务器如下配置所示，整个机柜满配，支持超过1000个虚拟机同时运行。
 
-！[alt text](https://github.com/bakerX/Diary/blob/master/images/openstack-rack.jpg)
+![alt text](https://github.com/bakerX/Diary/blob/master/images/openstack-rack.jpg)
 
-！[alt text](https://github.com/bakerX/Diary/blob/master/images/openstack-spec.jpg)
+![alt text](https://github.com/bakerX/Diary/blob/master/images/openstack-spec.jpg)
 
-..* 计算节点需要大量的内存来创建虚拟机，建议配置128G内存
-..* 计算节点和存储节点需要大量的硬盘来存储用户数据，由于数量比较大，采购时可以考虑性比价比比较高的1TB的硬盘
-..* 推荐的服务器型号包括： Dell PowerEdge R620、IBM System X3650、HP Proliant DL160 
+* 计算节点需要大量的内存来创建虚拟机，建议配置128G内存
+* 计算节点和存储节点需要大量的硬盘来存储用户数据，由于数量比较大，采购时可以考虑性比价比比较高的1TB的硬盘
+* 推荐的服务器型号包括： Dell PowerEdge R620、IBM System X3650、HP Proliant DL160 
 
 医疗行业因为其独特的商业价值、隐私保护和社会公益属性，注定了不可能像普通电商、游戏或者工具软件那样，全部可以采用公有云服务，私有云服务
 不但不会消失，还会有更大的市场机会，移动医疗企业既要关注与外网的公有云信息交互，也要留有接口考虑与医院内部私有云的互通互联。同时医疗私有云可以通过技术路线与公有云进行有控制的交互。某种程度来说，类似华为的“敏捷网络”产品，内网、外网、移动互联体系“三网合一”，受控跳转。 

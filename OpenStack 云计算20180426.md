@@ -62,7 +62,7 @@ OpenStack还提供完备的API接口，支持的语言有Java、Python、Ruby、
 
 OpenStack是由很多不同的组件构成的，他们实现高可用的方式也各不相同，Fuel提供了一套完整的高可用方案。
 
-！[alt text](https://github.com/bakerX/Diary/blob/master/images/openstack-HA.jpg)
+![alt text](https://github.com/bakerX/Diary/blob/master/images/openstack-HA.jpg)
 
 * OpenStack API服务，例如nova-api，glance-api，nova-api用HAProxy和pacemaker实现
 * OpenStack的web管理界面Horizon，也使用HAProxy和pacemaker实现
